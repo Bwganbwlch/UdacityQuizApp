@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="66dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:text="@string/header" />
+
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question1" />
+
+            <CheckBox
+                android:id="@+id/checkBox1Question1"
+                style="@style/check_box_style"
+                android:text="@string/CheckBox1Q1" />
+
+            <CheckBox
+                android:id="@+id/checkBox2Question1"
+                style="@style/check_box_style"
+                android:text="@string/CheckBox2Q1" />
+
+            <CheckBox
+                android:id="@+id/checkBox3Question1"
+                style="@style/check_box_style"
+                android:text="@string/CheckBox3Q1" />
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:text="@string/question2" />
+
+            <CheckBox
+                android:id="@+id/checkBox1Question2"
+                style="@style/check_box_style"
+                android:text="@string/CheckBox1Q2" />
+
+            <CheckBox
+                android:id="@+id/checkBox2Question2"
+                style="@style/check_box_style"
+                android:text="@string/CheckBox2Q2" />
+
+            <CheckBox
+                android:id="@+id/checkBox3Question2"
+                style="@style/check_box_style"
+                android:text="@string/CheckBox3Q2" />
+
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:text="@string/question3" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButton1Question3"
+                    style="@style/check_box_style"
+                    android:text="@string/radiobutton1" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2Question3"
+                    style="@style/check_box_style"
+                    android:text="@string/radiobutton2" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3Question3"
+                    style="@style/check_box_style"
+                    android:text="@string/radiobutton3" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:text="@string/question4" />
+
+            <EditText
+                android:id="@+id/question4Message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_question4"
+                android:inputType="textCapSentences|textAutoCorrect" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/submitAnswerButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="submitAnswers"
+                    android:text="@string/submitButton" />
+
+                <Button
+                    android:id="@+id/ResetButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toEndOf="@+id/submitAnswerButton"
+                    android:layout_toRightOf="@+id/submitAnswerButton"
+                    android:text="@string/resetButton"
+                    android:onClick="reset"
+                    />
+
+                <TextView
+                    android:id="@+id/points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_toEndOf="@+id/ResetButton"
+                    android:layout_toRightOf="@+id/ResetButton"
+                    android:text="@string/points"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

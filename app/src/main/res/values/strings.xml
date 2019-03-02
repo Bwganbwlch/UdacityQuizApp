@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="header">Quiz App!</string>
+    <string name="question1">Question #1: What kind of ducks do you like?</string>
+    <string name="question2">Question #2: What kind of cats do you like?</string>
+    <string name="question3">Question #3: Where can you find snakes?</string>
+    <string name="question4">Not a question #4: Just write something.</string>
+    <string name="hint_question4">Type Here.</string>
+    <string name="CheckBox1Q1">Big Ducks.</string>
+    <string name="CheckBox2Q1">Hard Ducks.</string>
+    <string name="CheckBox3Q1">Ducks with Stamina.</string>
+    <string name="CheckBox1Q2">Wet Cats.</string>
+    <string name="CheckBox2Q2">Tight Cats.</string>
+    <string name="CheckBox3Q2">Well Groomed Cats.</string>
+    <string name="radiobutton1">A party at Squee"'"s house.</string>
+    <string name="radiobutton2">On a M.F.ing plane.</string>
+    <string name="radiobutton3">Antartica</string>
+    <string name="submitButton">Submit</string>
+    <string name="points">Score:</string>
+    <string name="resetButton">Reset</string>
+
+</resources>
